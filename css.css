@@ -1,0 +1,12 @@
+.navbar-nav {
+    flex-direction: row;
+}
+
+a.logo {
+    font-family: 'Permanent Marker', 'cursive';
+    color: orange
+}
+
+a.logo:hover {
+    text-decoration: none;
+}
