@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+
+
+<form class="col-md-8">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text"
+               class="form-control"
+               ng-model="vm.board.name"
+               placeholder="Name"/>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control"
+                  name="description"
+                  rows="5"
+                  ng-model="vm.board.description"
+                  placeholder="Description"></textarea>
+    </div>
+        <div class="form-group">
+            <label for="imageURL">Banner URL</label>
+            <textarea class="form-control"
+                      name="bannerURL"
+                      ng-model="vm.board.URL"
+                      placeholder="Banner URL"></textarea>
+
+            <button class="btn btn-primary btn-block form-control"
+                    ng-click="vm.updateBoard(vm.widget)">Save Changes</button>
+            <a class="btn btn-primary btn-danger btn-block form-control"
+               ng-click="vm.deleteBoard()">Delete</a>
+    </div>
+</form>
