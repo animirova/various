@@ -8,21 +8,15 @@
 </head>
 
 <h1 class="text-center">Posts</h1>
-<button ng-show="!currentUser" class="btn btn-outline-success"
-        data-toggle="modal" data-target="#createPostModal" href="#!/login">Create A New Post</button>
+<button ng-show="!currentUser" class="btn btn-outline-success" href="#!/login">Create A New Post</button>
 <table class="table">
-    <thead class="thread-inverse">
+    <thead class="thead-inverse">
         <tr>
-    <!--<div class="col-xs-2 col-md-2">Score</div>-->
-    <!--<div class="col-xs-10 col-md-4">Title</div>-->
-    <!--<div class="hidden-xs hidden-sm col-md-3">Poster</div>-->
-    <!--<div class="hidden-xs hidden-sm col-md-2">Date</div>-->
-    <!--<div class="hidden-xs hidden-sm col-md-1">Comments</div>-->
-    <th class="col-2">Score</th>
-            <th class="col-4">Title</th>
-            <th class="col-2">Date</th>
-            <th class="col-3">Poster</th>
-            <th class="col-1">Comments</th>
+            <th class="col-xs-2">Score</th>
+            <th class="col-xs-4">Title</th>
+            <th class="col-xs-2">Date</th>
+            <th class="col-xs-3">Poster</th>
+            <th class="col-xs-1">Comments</th>
         </tr>
     </thead>
     <tbody>
@@ -30,77 +24,16 @@
     <tr></tr>
     <div ng-repeat="post in vm.posts">
         <tr>
-            <th class="col-2">{{post.score}}</th>
-            <th class="col-4">{{post.title}}</th>
-            <th class="col-2">{{post.date}}</th>
-            <th class="col-3">{{post.poster}}</th>
-            <th class="col-1">{{post.comments}}</th>
+            <th class="col-xs-2">{{post.score}}</th>
+            <th class="col-xs-4">{{post.title}}</th>
+            <th class="col-xs-2">{{post.date}}</th>
+            <th class="col-xs-3">{{post.poster}}</th>
+            <th class="col-xs-1">{{post.comments}}</th>
         </tr>
     </div>
 
     </tbody>
-
-
-<div class="row">
-
-    <div scope="row" class="col-2">Score</div>
-    <div class="col-4">Title</div>
-    <div class="col-3">Poster</div>
-    <div class="col-2">Date</div>
-    <div class="col-1">Comments</div>
-
-</div>
-
-<div scope="row" class="col-2">Score</div>
-<div class="col-4">Title</div>
-<div class="col-3">Poster</div>
-<div class="col-2">Date</div>
-<div class="col-1">Comments</div>
-
-<div class="row">
-<div scope="row" class="col-2">Score</div>
-<div class="col-4">Title</div>
-<div class="col-3">Poster</div>
-<div class="col-2">Date</div>
-<div class="col-1">Comments</div>
-</div>
 </table>
-
-<div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Create A New Post</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group container-list-group">
-                    <label for="name">Title</label>
-                    <input type="text"
-                           class="element-margin form-control"
-                           placeholder="Widget Name"
-                           ng-model="vm.post.title"/>
-
-                    <label for="html">HTML Content</label>
-                    <div text-angular class="element-margin"
-                         placeholder="HTML content goes here!"
-                         ng-model="vm.post.content"
-                         ta-toolbar="[['h1','h2','h3'],['bold','italics','underline','strikeThrough'],
-        ['ul','ol'],['justifyLeft','justifyCenter','justifyRight','justifyFull'],
-        ['indent','outdent'],['html']]">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-success" ng-click="vm.updatePost(vm.post)">Save</button>
-            <button type="button" class="btn btn-danger" ng-click="vm.deletePost(vm.post)">Delete</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-    </div>
-</div>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
