@@ -1,10 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebDev</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script src="stuff.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </head>
-<body>
 
-</body>
-</html>
+<div class="container-fluid">
+    <div class="row home-boxes align-items-center">
+    <h3 class="board-headings">Popular Boards</h3>
+    </div>
+    <div class="row home-boxes align-items-center">
+    <ul class="list-unstyled">
+            <li class="media">
+                <img class="home-icons d-flex mr-3" src="https://68.media.tumblr.com/avatar_4ec60cf6b72c_128.png">
+                <div class="media-body">
+                    <h5 class="board-subheadings">Genju Board</h5>
+                    <table class="table table-responsive table-striped">
+                        <tbody>
+                        <tr>
+                            <th>+100</th>
+                            <th>READ THIS COOL SHIT ABOUT GENJI</th>
+                            <th>Sep 10th, 2017</th>
+                        </tr>
+                        <tr>
+                            <th>+100</th>
+                            <th>READ THIS COOL SHIT ABOUT GENJI</th>
+                            <th>Sep 10th, 2017</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="media">
+                <img class="home-icons d-flex mr-3" src="">
+                <div class="media-body">
+                    <h5 class="board-subheadings">{{board.title}}</h5>
+                    <table class="table table-responsive table-striped">
+                        <tbody>
+                        <tr>
+                            <th>+100</th>
+                            <th>READ THIS COOL SHIT ABOUT GENJI</th>
+                            <th>Sep 10th, 2017</th>
+                        </tr>
+                        <tr>
+                            <th>+100</th>
+                            <th>READ THIS COOL SHIT ABOUT GENJI</th>
+                            <th>Sep 10th, 2017</th>
+                        </tr>
+                        </tbody>
+                    </table>                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="row home-boxes align-items-center">
+        <hr/>
+        <h3 class="board-headings">Recent Posts</h3>
+    </div>
+    <div class="row home-boxes align-items-center">
+        <table class="table table-responsive table-striped">
+            <thead class="thead-inverse">
+            <tr>
+                <th class="col-1">Score</th>
+                <th class="col-4">Title</th>
+                <th class="col-2">Date</th>
+                <th class="col-3">Poster</th>
+                <th class="col-1">Comments</th>
+                <th class="col-1">Tags</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr></tr>
+            <tr></tr>
+            <div ng-repeat="post in vm.posts">
+                <tr>
+                    <th class="col-xs-1">{{post.score}}</th>
+                    <th class="col-xs-4">{{post.title}}</th>
+                    <th class="col-xs-2">{{post.date}}</th>
+                    <th class="col-xs-3">{{post.poster}}</th>
+                    <th class="col-xs-1">{{post.comments}}</th>
+                    <th class="col-xs-1"><span class="badge badge-pill badge-warning" data-toggle="popover" data-trigger="click"
+                                               title="Tags" id="tags-badge">
+            <!--<th class="col-xs-1"><button class="btn btn-outline-success" data-toggle="popover" data-trigger="click"-->
+                        <!--title="Tags" id="tags-badge">-->
+                5</span></th>
+                </tr>
+            </div>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    </div>

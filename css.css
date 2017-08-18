@@ -23,3 +23,29 @@ h1 {
 .card-padding {
 
 }
+
+.tags-badge {
+    glyph-orientation-horizontal: center;
+}
+
+.home-boxes {
+    max-width: 75%;
+}
+
+.row.home-boxes {
+    display: block;
+    margin: 0 auto;
+}
+
+.board-headings {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.board-subheadings {
+    padding-top: 10px;
+}
+
+.media {
+    border: 2px solid black;
+}
