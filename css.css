@@ -152,8 +152,11 @@ h3.profile-header {
     background-color: darkslategray;
     box-shadow: 5px 5px 3px grey;
     margin: 15px;
+    color: white;
+    font-size: 90px;
 }
 
 .edit-icon {
     font-size: 2em;
+    padding-right: 20px;
 }
