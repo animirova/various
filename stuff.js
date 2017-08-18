@@ -17,6 +17,8 @@
         });
     });
 
+    $().button(toggle);
+
 
     // $(function () {
     //     $('[data-toggle="popover"]').popover()

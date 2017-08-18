@@ -8,8 +8,9 @@
 </head>
 
     <nav id="navbarOH" class="navbar navbar-fixed-top navbar-dark bg-dark">
-        <div class="navbar-brand"><a class="logo" href="#"><h3 class="display-4">OVERHUB</h3></a></div>
-        <ul class="nav navbar-nav navbar-left">
+        <a class="logo navbar-brand" href="#"><h3 class="display-4">OVERHUB</h3></a>
+
+        <ul class="navbar-nav navbar-left pull-left">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Boards
@@ -27,10 +28,11 @@
             <img src="http://watchkings.de/wp-content/uploads/2017/01/icon-vector-dva.png" width="30" height="30" class="d-inline-block align-top" alt="">
             <li class="nav-item"><a ng-show="currentUser" href="#!/profile/{{currentUser._id}}">{{currentUser._username}}</a></li>
             <div class="navbar-right">
-                <button ng-show="!currentUser" class="btn btn-outline-success"
+                <button ng-show="!currentUser" class="pull-right btn btn-outline-success"
                         data-toggle="modal" data-target="#loginRegisterModal" href="#!/login">Login or Register</button>
             </div>
         </ul>
+
     </nav>
 
 <div class="modal fade" id="loginRegisterModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel" aria-hidden="true">
