@@ -99,6 +99,11 @@ right {
 .post-container { max-width: 80% !important; }
     .all-comments-container { max-width: 80% !important; }}
 
+@media (max-width:600px) {
+    h1.profile-header { font-size: 40px; }
+    .edit-icon { font-size: 15px; }
+}
+
 .navbar-nav {
     flex-direction: row;
 }
@@ -121,4 +126,34 @@ body {
 
 .pull-left {
     float: left;
+}
+
+.pull-right {
+    float:right;
+}
+
+.profile-header .display-2 {
+    font-size: 2em;
+}
+
+.profile-header {
+    font-family: 'Anton', 'sans-serif';
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+h3.profile-header {
+    text-transform: lowercase;
+    opacity: .7;
+    padding-top: 20px;
+}
+
+.profile-icon {
+    background-color: darkslategray;
+    box-shadow: 5px 5px 3px grey;
+    margin: 15px;
+}
+
+.edit-icon {
+    font-size: 2em;
 }
