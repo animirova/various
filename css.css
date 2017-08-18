@@ -1,6 +1,4 @@
-.navbar-nav {
-    flex-direction: row;
-}
+
 
 a.logo {
     font-family: 'Permanent Marker', 'cursive';
@@ -9,32 +7,6 @@ a.logo {
 
 a.logo:hover {
     text-decoration: none;
-}
-
-h1 {
-    font-family: 'Oswald', 'sans-serif';
-    margin-top: 5px;
-}
-
-.card-block {
-    margin-top: auto;
-}
-
-.card-padding {
-
-}
-
-.tags-badge {
-    glyph-orientation-horizontal: center;
-}
-
-.home-boxes {
-    max-width: 75%;
-}
-
-.row.home-boxes {
-    display: block;
-    margin: 0 auto;
 }
 
 .board-headings {
@@ -46,6 +18,50 @@ h1 {
     padding-top: 10px;
 }
 
+.card-block {
+    margin-top: auto;
+}
+
+.card-padding {
+
+}
+
+h1 {
+    font-family: 'Oswald', 'sans-serif';
+    margin-top: 5px;
+}
+
+.tags-badge {
+    glyph-orientation-horizontal: center;
+}
+
+.home-boxes {
+    /*max-width: 75%;*/
+}
+
+.thread-score {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.post-container {
+    max-width: 80%;
+}
+
+.row.home-boxes {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
 .media {
     border: 2px solid black;
+}
+
+@media (min-width:600px) { .home-boxes { max-width: 75% !important;} }
+
+.navbar-nav {
+    flex-direction: row;
 }
